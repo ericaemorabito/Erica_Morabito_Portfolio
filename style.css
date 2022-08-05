@@ -1,6 +1,29 @@
+:root {
+    --sea-pink: #ecb0a1;
+    --eastern-blue: #168eba;
+    --hippie-blue: #559fb6;
+    --akaroa: #dacab5;
+    --spanish-white: #e8d7bd;
+    --shakespeare: #55b2d2;
+    --transparent-pink: rgb(236,176,161, 0.7);
+}
+
 * {
-    background-color: #E6C5F0;
-    color: #3991B7;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+header,
+nav {
+    background-color: var(--akaroa);
 }
 
 /* Header */
@@ -9,90 +32,157 @@ header {
 }
 
 h1 {
-    position: relative;
-    top: 10%;
+    position: fixed;
     font-size: 1.2em;
-    display: inline;
+    padding: 1em;
+    z-index: 2;
 }
 
-/* Nav bar on right and stay at the top of page when scroll */
 nav {
+    position: fixed;
+    border-bottom: 2px solid black;
+    z-index: 1;
     display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 60px;
     justify-content: flex-end;
-    border-bottom: 2px solid #3991B7;
 }
 
 nav a {
-    display: inline-block;
     position: relative;
-    margin: .5em;
-
+    top: 5px;
+    margin: 5px;
+    text-decoration: none;
 }
 
-/* Home Art Page */
-.home-art {
+nav a:hover {
+    color: var(--eastern-blue);
+}
+
+/*trying to get smooth scrolling!!!*/
+main {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+/* Home Hello */
+.home-hello {
+    background-color: var(--sea-pink);
     display: flex;
-    flex-wrap: wrap;
-}
-.home-art h2 {
-    font-size: 9em;
-    border: 1px solid black;
-    max-width: 5em;
-    margin: 0%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
 }
 
-/*Get the intro paragraph on right side*/
-.home-art p {
+.home-hello h2 {
     font-size: 2em;
-    border: 1px solid black;
     position: relative;
-    max-width: 50%;
+    right: 240px;
+    margin: 10px;
+
+}
+
+.home-hello span {
+    font-size: 2em;
+    margin-bottom: 0%;
+}
+
+.home-hello p {
+    font-size: 2em;
+    width: 600px;
+    margin-top: 0%;
 }
 
 /* About Me */
 .about-me {
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: var(--hippie-blue);
 }
 
 .about-me h2 {
-    color:black;
+    font-size: 2em;
+    margin-bottom: 10px;
+    background-color: var(--hippie-blue);
+    color: var(--akaroa);
+    z-index: 0;
     position: relative;
+    left: 146px;
+    bottom: 89px;
 }
 
 #profile-pic {
-    height: 200px;
-    width: 150px;
-    border-radius: 47%;
+    height: 450px;
+    width: 338px;
+    border-radius: 50%;
     position: relative;
-    left: 313px;
 }
-
 
 .about-me p {
-    border: 1px solid black;
-    height: fit-content;
-    width: 500px;
-    padding: 10%;
-    text-align: left;
-    line-height: 1.75;
+    background-color: var(--hippie-blue);
+    font-size: 1.5em;
+    line-height: 1.45em;
+    color: var(--akaroa);
+    text-align: justify;
+    max-width: 500px;
+    max-height: 300px;
     position: relative;
-    bottom: 200px;
-    right: 300px;
+    bottom: 1px;
+    right: 8px;
 }
 
-/* Work Page  */
-.my-work {
-    display: flex;
+/* Work */
+
+#my-work, .my-work div, .work, .work h2, .work p {
+    background-color: var(--spanish-white);
+    color: var(--shakespeare);
 }
-img {
-    height: 150px;
-    width: 200px;
+
+#my-work {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .work {
-    background-color: bisque;
+    width: 350px;
+    height: 380px;
+    border: 3px dashed var(--shakespeare);
+    border-radius: 8%;
+    padding: 2% 5% 2% 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.work h2 {
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.work img {
+    height: 150px;
+    width: 200px;
+
+}
+
+.work p {
+    font-size: 1.2em;
+}
+
+.language-used {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    color: var(--eastern-blue);
 }

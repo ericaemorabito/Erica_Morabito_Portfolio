@@ -1,12 +1,93 @@
 * {
-    color: #000;
+    background-color: #E6C5F0;
+    color: #3991B7;
 }
 
-#profile {
+/* Header */
+header {
+    display: inline;
+}
+
+h1 {
+    position: relative;
+    top: 10%;
+    font-size: 1.2em;
+    display: inline;
+}
+
+/* Nav bar on right and stay at the top of page when scroll */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 2px solid #3991B7;
+}
+
+nav a {
+    display: inline-block;
+    position: relative;
+    margin: .5em;
+
+}
+
+/* Home Art Page */
+.home-art {
+    display: flex;
+    flex-wrap: wrap;
+}
+.home-art h2 {
+    font-size: 9em;
+    border: 1px solid black;
+    max-width: 5em;
+    margin: 0%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+/*Get the intro paragraph on right side*/
+.home-art p {
+    font-size: 2em;
+    border: 1px solid black;
+    position: relative;
+    max-width: 50%;
+}
+
+/* About Me */
+.about-me {
+    display: flex;
+    justify-content: center;
+}
+
+.about-me h2 {
+    color:black;
+    position: relative;
+}
+
+#profile-pic {
     height: 200px;
     width: 150px;
+    border-radius: 47%;
+    position: relative;
+    left: 313px;
 }
 
+
+.about-me p {
+    border: 1px solid black;
+    height: fit-content;
+    width: 500px;
+    padding: 10%;
+    text-align: left;
+    line-height: 1.75;
+    position: relative;
+    bottom: 200px;
+    right: 300px;
+}
+
+/* Work Page  */
+.my-work {
+    display: flex;
+}
 img {
     height: 150px;
     width: 200px;

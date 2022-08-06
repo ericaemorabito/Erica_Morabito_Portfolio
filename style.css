@@ -16,9 +16,13 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     height: 100vh;
-    overflow: hidden;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+  /*   /* overflow: hidden;
+    overflow-y: scroll; 
+    scroll-behavior: smooth; */
+}
+
+a {
+    text-decoration: none;
 }
 
 header,
@@ -58,6 +62,10 @@ nav a {
 
 nav a:hover {
     color: var(--eastern-blue);
+}
+
+nav a:visited {
+    color: black;
 }
 
 /*trying to get smooth scrolling!!!*/
@@ -154,8 +162,8 @@ main {
 }
 
 .work {
-    width: 350px;
-    height: 380px;
+    width: max-content;
+    height: max-content;
     border: 3px dashed var(--shakespeare);
     border-radius: 8%;
     padding: 2% 5% 2% 5%;
@@ -168,10 +176,20 @@ main {
     text-decoration: none;
 }
 
+.work a:visited {
+    color: var(--shakespeare);
+}
+
 .work img {
     height: 150px;
     width: 200px;
+    border-radius: 10%;
+}
 
+.work img:hover {
+    height: 170px;
+    width: 220px;
+    transition-duration: 1s;
 }
 
 .work p {
@@ -185,4 +203,13 @@ main {
 footer {
     text-align: center;
     color: var(--eastern-blue);
+}
+
+/* mobile-first approach, use 'min-width' values going from narrow to wide! */
+@media screen and (min-width:768){
+    .work {
+        flex-direction: column;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 }

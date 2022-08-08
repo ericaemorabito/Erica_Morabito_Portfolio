@@ -16,9 +16,6 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     height: 100vh;
-  /*   /* overflow: hidden;
-    overflow-y: scroll; 
-    scroll-behavior: smooth; */
 }
 
 a {
@@ -121,8 +118,8 @@ main {
     color: var(--akaroa);
     z-index: 0;
     position: relative;
-    left: 146px;
-    bottom: 89px;
+    left: 97px;
+    bottom: 106px;
 }
 
 #profile-pic {
@@ -141,13 +138,17 @@ main {
     max-width: 500px;
     max-height: 300px;
     position: relative;
-    bottom: 1px;
-    right: 8px;
+    right: 36px;
 }
 
 /* Work */
 
-#my-work, .my-work div, .work, .work h2, .work p {
+/* Background color Spanish White */
+#my-work, 
+.my-work div, 
+.work, 
+.work h2, 
+.work p {
     background-color: var(--spanish-white);
     color: var(--shakespeare);
 }
@@ -161,19 +162,21 @@ main {
     align-items: center;
 }
 
+/* Each Project Square */
 .work {
-    width: max-content;
+    width: 350px;
     height: max-content;
-    border: 3px dashed var(--shakespeare);
-    border-radius: 8%;
-    padding: 2% 5% 2% 5%;
-    display: flex;
-    flex-direction: column;
+    border: 5px solid var(--shakespeare);
+    border-radius: 10%;
 }
 
 .work h2 {
-    font-size: 2em;
+    text-align: left;
+    font-size: 1.3em;
     text-decoration: none;
+    position: relative;
+    top: 90px;
+    padding-left: 4px;
 }
 
 .work a:visited {
@@ -181,35 +184,80 @@ main {
 }
 
 .work img {
-    height: 150px;
-    width: 200px;
+    height: 170px;
+    width: 220px;
     border-radius: 10%;
+    position: relative;
+    left: 185px;
+    z-index: 1;
 }
 
 .work img:hover {
-    height: 170px;
-    width: 220px;
+    height: 180px;
+    width: 230px;
     transition-duration: 1s;
 }
 
-.work p {
-    font-size: 1.2em;
-}
-
 .language-used {
-    text-align: center;
+    text-align: left;
+    display: block;
+    position: relative;
+    bottom: 85px;
+    padding-left: 4px;
 }
 
+/*Contact in the footer */
 footer {
-    text-align: center;
-    color: var(--eastern-blue);
+    background-color: var(--sea-pink);
+    color: black;
+    font-size: 1.2em;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* mobile-first approach, use 'min-width' values going from narrow to wide! */
-@media screen and (min-width:768){
+#contact h2 {
+    position: relative;
+    top: 16px;
+    right: 36px;
+}
+
+#contact p {
+    display: inline;
+    margin: 20px;
+    position: relative;
+    left: 100px;
+    bottom: 10px;
+}
+
+#contact a:visited {
+    color: black;
+}
+
+#contact a:hover {
+    color: var(--eastern-blue);
+} */
+
+/* Responsive Design */
+
+/* For mobile phones */
+@media screen and (max-width:768px){
     .work {
-        flex-direction: column;
+       flex: 0 0 100%;
+} 
+
+/*For tablets */
+@media screen and (min-width:600px){
+    .work {
         flex: 0 0 50%;
-        max-width: 50%;
     }
 }
+
+/* For desktop */
+@media screen and (min-width:768px) {
+    .work {
+       flex: 0 0 33%;
+    }
+} 

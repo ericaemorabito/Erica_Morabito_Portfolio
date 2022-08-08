@@ -2,37 +2,51 @@
 
 ## Description
 
-- My motivation for this website is to showcase my projects and work samples so employers can assess if I am right for their position.
-- I built this project to house all my work samples in one location to simplify an employers assessment process.
+- My motivation for this website is to showcase my projects and work samples for employers.
+- I built this project to house my work in one location to simplify an employer's assessment process.
 - This site gives employers a greater understanding of my web development skills.
-- Throughout this project, I learned ...
+- Throughout this project, I grew my understanding of HTML, CSS, and responsive design.
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+- Open your chosen browser.
+- Copy this URL: 
+- Paste into browser.
+- View webpage home and navigation bar.
 
-In order to 
+**Webpage Home**
+![webpage home with hello](./assets/images/screenshot1.png)
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+**To learn more about me:**
+- Follow installation instructions.
+- Click "about" at the top of the webpage.
+- View "about" information.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+![webpage with project pictures](./assets/images/screenshot2.png)
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+**To view my work:**
+- Follow installation instructions.
+- Click "work" at the top of the webpage.
+- Click on the image associated with each project.
+- View deployed website.
+
+![webpage with project pictures](./assets/images/screenshot3.png)
+
+**To contact me:**
+- Followinstallation instructions.
+- Click "contact" at the top of the webpage.
+- Call, text or email me using the contact information listed at the bottom of the webpage.
+
+![webpage with contact information](./assets/images/screenshot4.png)
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+**Portfolios I took inspiration from:**
+- https://brittanychiang.com/
+- https://bepatrickdavid.com/
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
-## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
+**Tutorials I used:**
+- https://www.youtube.com/watch?v=y9nlfqT4s9s
 ---

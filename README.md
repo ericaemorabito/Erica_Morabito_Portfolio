@@ -10,7 +10,7 @@
 ## Installation
 
 - Open your chosen browser.
-- Copy this URL: 
+- Copy this URL: https://ericaemorabito.github.io/Erica_Morabito_Portfolio/
 - Paste into browser.
 - View webpage home and navigation bar.
 

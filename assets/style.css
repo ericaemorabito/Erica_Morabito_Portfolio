@@ -39,6 +39,7 @@ h1 {
     z-index: 2;
 }
 
+/* Navigation bar is fixed to stop of screen */
 nav {
     position: fixed;
     border-bottom: 2px solid black;
@@ -55,20 +56,17 @@ nav a {
     top: 5px;
     margin: 5px;
     text-decoration: none;
+    color: black;
 }
 
+/* When hover over navigation links, color changes to blue */
 nav a:hover {
     color: var(--eastern-blue);
 }
 
+/* When visited a navigation link, color remains black */
 nav a:visited {
     color: black;
-}
-
-/*trying to get smooth scrolling!!!*/
-main {
-    overflow-y: scroll;
-    scroll-behavior: smooth;
 }
 
 /* Home Hello */
@@ -90,6 +88,7 @@ main {
 
 }
 
+/* Large Erica Morabito on home page */
 .home-hello span {
     font-size: 2em;
     margin-bottom: 0%;
@@ -143,7 +142,7 @@ main {
 
 /* Work */
 
-/* Background color Spanish White */
+/* Background color spanish white */
 #my-work, 
 .my-work div, 
 .work, 
@@ -177,12 +176,15 @@ main {
     position: relative;
     top: 90px;
     padding-left: 4px;
+    color: var(--shakespeare);
 }
 
+/* When visited a link, the link remain the blue font color */
 .work a:visited {
     color: var(--shakespeare);
 }
 
+/* Each image of projects */
 .work img {
     height: 170px;
     width: 220px;
@@ -218,6 +220,10 @@ footer {
     justify-content: center;
 }
 
+footer a {
+    color: black;
+}
+
 #contact h2 {
     position: relative;
     top: 16px;
@@ -232,10 +238,12 @@ footer {
     bottom: 10px;
 }
 
+/* When links in footer visited, they remain their black color */
 #contact a:visited {
     color: black;
 }
 
+/* When links in footer hovered over, they turn blue */
 #contact a:hover {
     color: var(--eastern-blue);
 } */

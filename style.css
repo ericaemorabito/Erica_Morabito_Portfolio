@@ -252,10 +252,11 @@ footer a {
 
 /* For mobile phones */
 @media screen and (max-width:768px){
-    .work {
-       flex: 0 0 100%;
-}
-}
+        .work {
+           flex: 0 0 100%;
+        }
+} 
+
 
 /*For tablets */
 @media screen and (min-width:600px){

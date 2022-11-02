@@ -163,12 +163,23 @@ nav a:visited {
     height: 500px;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.featured-project,
+.project-title,
+.project-description,
+.project-card a,
+.project-tech-list,
+.github {
+    position: relative;
 }
 
 .featured-project {
     text-align: right;
     margin: 10px;
 }
+
 .project-title {
     font-size: 2em;
     text-align: right;
@@ -176,30 +187,34 @@ nav a:visited {
 }
 
 .project-image {
-    height: 200px;
-    width: 300px;
-    position: relative;
-    bottom: 125px;
+    height: 17em;
     z-index: 0;
+    position: absolute;
+    bottom: -6em;
+    right: 28em;
 }
 
 .project-description {
     color: var(--akaroa);
     background-color: var(--hippie-blue);
-    align-items: flex-end;
     text-align: right;
     padding: 20px;
     z-index: 1;
+    width: 450px;
+    left: 200px;
+    margin-bottom: 10px;
 }
 
 .project-tech-list {
     text-align: right;
 }
+
 .project-tech-list li {
     display: inline;
     list-style: none;
     padding: 5px;
     margin: 2px;
+    font-weight: bold;
 }
 
 .github {
@@ -223,7 +238,7 @@ footer a {
     color: black;
 }
 
-#contact h2 {
+#contact h3 {
     position: relative;
     top: 16px;
     right: 36px;
@@ -245,12 +260,12 @@ footer a {
 /* When links in footer hovered over, they turn blue */
 #contact a:hover {
     color: var(--eastern-blue);
-} */
+}
 
 /* Responsive Design */
 
 /* For mobile phones */
-@media screen and (max-width:768px){
+/* @media screen and (max-width:768px){
         .work {
            flex: 0 0 100%;
         }
@@ -258,15 +273,15 @@ footer a {
 
 
 /*For tablets */
-@media screen and (min-width:600px){
+/* @media screen and (min-width:600px){
     .work {
         flex: 0 0 50%;
     }
-}
+} */
 
 /* For desktop */
-@media screen and (min-width:768px) {
+/* @media screen and (min-width:768px) {
     .work {
        flex: 0 0 33%;
     }
-} 
+}  */

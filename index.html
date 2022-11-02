@@ -13,12 +13,15 @@
     <h1>Erica Morabito</h1>
     <!-- Nav Bar-->
     <nav>
+      </div>
       <a href="/#about-me-section">about</a>
       <a href="/#my-work">work</a>
       <a href="/#contact">contact</a>
+      </ul>
     </nav>
   </header>
   <main>
+
     <!-- Home Hello -->
     <section>
       <figure class="home-hello">
@@ -31,47 +34,71 @@
         </p>
       </figure>
     </section>
+
     <!-- About me -->
     <section id="about-me-section">
       <figure class="about-me">
         <h2>About me</h2>
         <p>
           I always wanted to learn to code.
-          The UT Bootcamp gave me the opportunity to learn with expert programmers.
+          The UT Austin Bootcamp gave me the opportunity to learn with expert programmers.
           Today, I am excited to pursue a future in web development.
         </p>
         <img id="profile-pic" src="./assets/images/profile pic 1.jpeg" alt="picture of Erica Morabito"></img>
       </figure>
     </section>
     <!-- My work -->
-    <section id="my-work">
-      <!-- Refactored Website -->
-      <figure class="work">
-        <h2><a href="#">Refactored Website</a></h2>
-        <a href="https://ericaemorabito.github.io/week-1-challenge/" target="_blank">
-          <img src="./assets/images/Horiseon.png" alt="screenshot of project" />
+    <section id="projects">
+
+      <!-- Group Project 1 -->
+      <h2 class="headings">Some things I've built</h2>
+
+      <div class="project-card">
+        <p class="featured-project">Featured Project</p>
+        <a class="project-title" href="https://ericaemorabito.github.io/taste_makers/">Tastemakers Website</a>
+        <div class="project-description">
+          <p>
+            Webpage where users can choose between four cuisine or three dessert options.
+            User receives a list of options for recipes based on their choices.
+            Presented with links, recipes, and videos.
+          </p>
+        </div>
+        <a href="https://ericaemorabito.github.io/taste_makers/" target="_blank">
+          <img class="project-image" src="./assets/images/tastemakers.png" alt="screenshot of tastemakers webpage" />
         </a>
-        <p class="language-used">HTML CSS</p>
-      </figure>
-      <!-- Group Project #1-->
-      <figure class="work">
-        <h2><a href="#">Tastemakers: Find a recipe webpage</a></h2>
-        <a href="https://dcmccormick.github.io/taste_makers/" target="_blank">
-          <img src="/taste_makers/assets/display_recipes.html" alt="screenshot of project" />
+        <ul class="project-tech-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Spoonacular API</li>
+          <li>YouTube API</li>
+        </ul>
+        <p class="github"><a href="https://github.com/ericaemorabito/taste_makers.git" target="_blank">Github</a></p>
+      </div>
+
+      <!-- Weather Dashboard -->
+      <!-- <div class="work">
+        <h2><a href="https://ericaemorabito.github.io/Weather_Dashboard/">Weather Dashboard</a></h2>
+        <a href="https://ericaemorabito.github.io/Weather_Dashboard/" target="_blank">
+          <img src="./assets/images/weather.png" alt="screenshot of project" />
         </a>
-        <p class="language-used">HTML CSS</p>
-      </figure>
-      <!-- Upcoming Project #2-->
-      <figure class="work">
-        <h2><a href="#">Upcoming Project</a></h2>
-        <a href="https://github.com/ericaemorabito?tab=repositories" target="_blank">
-          <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
-            alt="screenshot of project" />
+        <p class="language-used">HTML CSS JavaScript OpenWeather API</p>
+        <p class="Github"><a href="https://github.com/ericaemorabito/Weather_Dashboard.git" target="_blank">Github</a></p>
+      </div> -->
+
+      <!-- Code Quiz -->
+      <!-- <figure class="work">
+        <h2><a href="https://ericaemorabito.github.io/Code_Quiz/">Code Quiz</a></h2>
+        <a href="https://ericaemorabito.github.io/Code_Quiz/" target="_blank">
+          <img src="./assets/images/code-quiz.png"
+            alt="screenshot of Github Project" />
         </a>
         <p class="language-used">HTML CSS JavaScript</p>
+        <p class="Github"><a href="https://github.com/ericaemorabito/Code_Quiz.git" target="_blank">Github</a></p>
       </figure>
-    </section>
+    </section> -->
   </main>
+
   <!-- Contact Me-->
   <footer>
     <section id="contact">
@@ -83,6 +110,7 @@
       </figure>
     </section>
   </footer>
+  <script src="./script.js"></script>
 </body>
 
 </html>
